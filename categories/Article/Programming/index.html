@@ -43,7 +43,7 @@
     
     <title>
         
-            Go特殊的引用类型：值传递/指针传递/引用传递 | 
+            分类: Programming | 
         
         Wzy_CC Blog
     </title>
@@ -54,7 +54,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",Golang">
+    <meta name="keywords" content="">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -81,9 +81,6 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
-            
-                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -220,7 +217,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Wzy_CC Blog">
-    <meta name="msapplication-starturl" content="https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/">
+    <meta name="msapplication-starturl" content="https://wzy-cc.com/categories/Article/Programming/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Wzy_CC Blog">
@@ -235,16 +232,13 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/">
+    <meta property="og:url" content="https://wzy-cc.com/categories/Article/Programming/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Go特殊的引用类型：值传递/指针传递/引用传递 | Wzy_CC Blog">
+    <meta property="og:title" content="分类: Programming | Wzy_CC Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="Golang"> 
-
     
-        <meta property="article:published_time" content="Wed Aug 12 2020 18:10:00 GMT+0800">
-        <meta property="article:modified_time" content="Wed Aug 12 2020 18:27:05 GMT+0800">
+
     
 
     <!-- The Twitter Card protocol -->
@@ -252,43 +246,13 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html" />
+        <link rel="canonical" href="https://wzy-cc.com/categories/Article/Programming/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
-
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": "https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html",
-    "headline": "Go特殊的引用类型：值传递/指针传递/引用传递",
-    "datePublished": "Wed Aug 12 2020 18:10:00 GMT+0800",
-    "dateModified": "Wed Aug 12 2020 18:27:05 GMT+0800",
-    "author": {
-        "@type": "Person",
-        "name": "Wzy_CC",
-        "image": {
-            "@type": "ImageObject",
-            "url": "/img/avatar.png"
-        },
-        "description": "Welcome to CC's Blog"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Wzy_CC Blog",
-        "logo": {
-            "@type":"ImageObject",
-            "url": "/img/favicon.png"
-        }
-    },
-    "keywords": ",Golang",
-    "description": "",
-}
-</script>
 
 
     
@@ -322,291 +286,99 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
-
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
+    <div class="locate-thumbnail-symbol"></div>
 
-
-    <!-- Left aligned menu below button -->
-    
-    
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%98%E9%87%8F%E5%90%8D-%E5%8F%98%E9%87%8F%E5%80%BC-%E5%8F%98%E9%87%8F%E5%9C%B0%E5%9D%80"><span class="post-toc-number">1.</span> <span class="post-toc-text">变量名&#x2F;变量值&#x2F;变量地址</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8C%87%E9%92%88-%E5%BC%95%E7%94%A8"><span class="post-toc-number">2.</span> <span class="post-toc-text">指针&#x2F;引用</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%80%BC%E4%BC%A0%E9%80%92"><span class="post-toc-number">3.</span> <span class="post-toc-text">值传递</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8C%87%E9%92%88%E4%BC%A0%E9%80%92"><span class="post-toc-number">4.</span> <span class="post-toc-text">指针传递</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92-for-C"><span class="post-toc-number">5.</span> <span class="post-toc-text">引用传递 for C++</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#GO%E4%B8%AD%E2%80%9C%E7%89%B9%E6%AE%8A%E7%9A%84%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B%E2%80%9D"><span class="post-toc-number">6.</span> <span class="post-toc-text">GO中“特殊的引用类型”</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="post-toc-number">7.</span> <span class="post-toc-text">参考链接</span></a></li></ol>
-    </ul>
+    <!-- Pin on top -->
     
 
-
-
-
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+        
+    
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/">Go特殊的引用类型：值传递/指针传递/引用传递</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            结论：golang中函数传参只有值传递
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Wzy_CC's avatar">
+            </div>
+            <div>
+                <strong>Wzy_CC</strong>
+                <span>8月 12, 2020</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Article/">Article</a>, <a class="post_category-link" href="/categories/Article/Programming/">Programming</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-        
-    
-            <p class="article-headline-p">
-                Go特殊的引用类型：值传递/指针传递/引用传递
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Wzy_CC</strong>
-        <span>8月 12, 2020</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-none-link" href="/tags/Golang/" rel="tag">Golang</a>
-    </ul>
-    
-
-    <!-- Share -->
-    
-        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Go特殊的引用类型：值传递/指针传递/引用传递&url=https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html&pic=https://wzy-cc.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Go特殊的引用类型：值传递/指针传递/引用传递&url=https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html&via=Wzy_CC" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://wzy-cc.com/2020/08/12/2020-08-12-%5BIntroduction%5D%E5%80%BC%E4%BC%A0%E9%80%92%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
     
 </div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p>结论：golang中函数传参只有值传递</p>
-<h2 id="变量名-变量值-变量地址"><a href="#变量名-变量值-变量地址" class="headerlink" title="变量名/变量值/变量地址"></a>变量名/变量值/变量地址</h2><pre><code>var a &#x3D; 10
-log.Printf(&quot;%p\n&quot;,a) &#x2F;&#x2F; 变量地址假设为 0x00000001</code></pre>
-
-<p>变量名a，变量值10，变量地址0x00000001</p>
-<h2 id="指针-引用"><a href="#指针-引用" class="headerlink" title="指针/引用"></a>指针/引用</h2><p>指针变量存放其他变量的地址。在C++中引用就是变量的另一名字</p>
-<p>变量名本身并没有作用，只相当于代号利于程序员编程，引用作为别名本质上还是指向同一个内存地址。指针本质上占用一小段内存空间</p>
-<h2 id="值传递"><a href="#值传递" class="headerlink" title="值传递"></a>值传递</h2><p>值传递就是深拷贝，在函数内传递的副本，并不会影响函数外的实参</p>
-<p>在函数调用时，将实参深拷贝后压栈</p>
-<h2 id="指针传递"><a href="#指针传递" class="headerlink" title="指针传递"></a>指针传递</h2><p>形参为指向实参地址的指针，当对形参的指向操作时，就相当于对实参本身进行的操作</p>
-<h2 id="引用传递-for-C"><a href="#引用传递-for-C" class="headerlink" title="引用传递 for C++"></a>引用传递 for C++</h2><p>在C++中的引用传递本质上将实参的地址传递到函数中，和指针传递效果类似</p>
-<p>在Go中的函数调用只有值传递，但是存在引用类型slice、map、channel</p>
-<pre><code>array :&#x3D; []int{1,2,3}
-arrayslice :&#x3D; array[:]</code></pre>
-
-<h2 id="GO中“特殊的引用类型”"><a href="#GO中“特殊的引用类型”" class="headerlink" title="GO中“特殊的引用类型”"></a>GO中“特殊的引用类型”</h2><p>能够通过<code>make()</code>创建的都是引用类型，比图<code>slice</code>和<code>map</code>，<code>slice</code>本质上是一个指向数组内存空间的一个指针类型：</p>
-<pre><code>type Slice struct {
-    point Point &#x2F;&#x2F; 内存地址
-    len int
-    cap int
-}</code></pre>
-
-<p>所以本质上对<code>slice</code>切片的赋值，实质上就是对<code>Slice</code>这个结构体进行深拷贝，对于<code>Point</code>来说自然是指向同一段空间了。虽然是值传递，但是本质上是两个<code>Slice</code>对象，传递的对象是指针，指针相同，因此算是特殊的值传递。<code>map</code>同理</p>
-<p>在Golang中的例子可以比较直观反应切片特性：</p>
-<pre><code>func printAddr(s []int) { &#x2F;&#x2F; 打印数组地址 值参数
-	log.Printf(&quot;printAddr:%p\n&quot;, &amp;s[0])
-}
-
-func printAddrPoint(ps *[]int) { &#x2F;&#x2F; 打印数组地址 指针参数
-	log.Printf(&quot;printAddrPoint:%p\n&quot;, &amp;((*ps)[0]))
-}
-
-func main() {
-	array :&#x3D; [3]int{1, 2, 3}   &#x2F;&#x2F; 数组   commit 1
-    &#x2F;&#x2F; array :&#x3D; []int{1, 2, 3} &#x2F;&#x2F; 切片   commit 2
-	log.Printf(&quot;array:%p\n&quot;, &amp;array)
-
-	arrayslice :&#x3D; array[:] &#x2F;&#x2F; 切片
-	log.Printf(&quot;arrayslice:%p\n&quot;, &amp;arrayslice)
-	
-	printAddr(arrayslice)
-	printAddrPoint(&amp;arrayslice)
-}</code></pre>
-
-<p>控制台输出：</p>
-<pre><code>2020&#x2F;08&#x2F;07 15:15:35 array:0xc00000e3c0
-2020&#x2F;08&#x2F;07 15:15:35 arrayslice:0xc000004620
-2020&#x2F;08&#x2F;07 15:15:35 printAddr:0xc00000e3c0
-2020&#x2F;08&#x2F;07 15:15:35 printAddrPoint:0xc00000e3c0</code></pre>
-
-<p>本质上是因为切片传递依旧是值传递，虽然结构体本身不是一个地址，但是里面包含的起始地址都是<code>array[0]</code>这也可以解释为什么三者相同</p>
-<p>注释掉commit1，解注释掉commit2，再次运行结果如下：</p>
-<pre><code>2020&#x2F;08&#x2F;07 15:22:42 array:0xc0000044a0
-2020&#x2F;08&#x2F;07 15:22:42 arrayslice:0xc000004640
-2020&#x2F;08&#x2F;07 15:22:42 printAddr:0xc00000e3c0
-2020&#x2F;08&#x2F;07 15:22:42 printAddrPoint:0xc00000e3c0</code></pre>
-
-<p>猜测<code>array[0]</code>的地址不出意外也应该是<code>0xc00000e3c0</code>，验证：</p>
-<pre><code>func main() {
-	array :&#x3D; []int{1, 2, 3} &#x2F;&#x2F; 数组
-	log.Printf(&quot;array[0]:%p\n&quot;, &amp;array[0])
-}</code></pre>
-
-<p>控制台输出：</p>
-<pre><code>2020&#x2F;08&#x2F;07 15:37:19 array[0]:0xc00000e3c0</code></pre>
-
-<p><code>array</code>和<code>array[0]</code>的地址不一致。<code>array[0]</code>和其他切片的第零个元素的地址一样，继续尝试后可以得出结论：</p>
-<p><strong>1.数组地址等同于数组首元素地址，和C是一致的</strong></p>
-<p><strong>2.切片(结构体)的地址和切片首元素的地址是不一致的</strong>，猜测声明切片的时候顺序是先创建了数组，然后初始化切片结构体为数组引用？</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://www.flysnow.org/2018/02/24/golang-function-parameters-passed-by-value.html">Go语言参数传递是传值还是传引用</a></p>
-<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000015135105">我对变量产生了这些想法</a></p>
-<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000015246182">Golang中函数传参存在引用传递吗?</a></p>
-<p><a target="_blank" rel="noopener" href="https://juejin.im/post/6844903940891344903#heading-5">理解 Golang 中 slice 的底层设计</a></p>
-
-        
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-        <a href="/2020/08/11/hello-world/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
-    
-</nav>
-
-        </div>
-    </div>
-
 
 
                     
@@ -916,10 +688,6 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
-        
-            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
-        
-    
 
 
 
@@ -932,11 +700,6 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
-        
-            $(function() {
-                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
-                prettyPrint();
-                })
         
     
     
